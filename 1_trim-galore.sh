@@ -2,7 +2,7 @@
 #!/bin/bash
 
 #$ -q short.q
-#$ -N trim-galore_cutadapt
+#$ -N trim-galore
 #$ -M florentin.constancias@cirad.fr
 #$ -pe parallel_smp 6
 #$ -l mem_free=6G
