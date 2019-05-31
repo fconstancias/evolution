@@ -13,8 +13,8 @@ module load system/conda/5.1.0
 
 source activate trimmomatic
 
-IN=IN
-OUT=trimmomatic
+IN=raw/
+OUT=trimmomatic/
 
 mkdir -p ${OUT}
 
