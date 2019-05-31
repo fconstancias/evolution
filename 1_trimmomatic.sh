@@ -34,8 +34,19 @@ trimmomatic PE -phred33 \
 
 done
 
+
+source deactivate trimgalore
+source activate fastqc_multiqc
+
+mkdir ${OUT}'QC/'
+fastqc -t ${NSOLTS} ${OUT}*fastq* -o ${OUT}'QC/'
+multiqc ${OUT}'QC/' -o ${OUT}'QC/'
+
+
+
 # JOB END
 date
 
 exit 0
+
 
